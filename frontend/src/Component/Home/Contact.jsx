@@ -22,7 +22,7 @@ const Contact = () => {
     const handleFacebookClick = () => {
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         if (isMobile) {
-            window.location.href = 'fb://profile/100087769925159';
+            window.location.href = 'fb://profile/nayana.katrodiya.9';
         } else {
             window.open('https://www.facebook.com/nayana.katrodiya.9?mibextid=LQQJ4d', '_blank');
         }
