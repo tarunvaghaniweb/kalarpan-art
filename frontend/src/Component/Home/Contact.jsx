@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../css/contact.css';
-
 const Contact = () => {
     const handlePhoneClick = () => {
         window.location.href = 'tel:+919978043407';
@@ -21,10 +18,11 @@ const Contact = () => {
 
     const handleFacebookClick = () => {
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const fbURL = 'https://www.facebook.com/share/19kwCjULLT/?mibextid=LQQJ4d';
         if (isMobile) {
-            window.location.href = 'fb://profile/nayana.katrodiya.9';
+            window.location.href = fbURL;
         } else {
-            window.open('https://www.facebook.com/nayana.katrodiya.9?mibextid=LQQJ4d', '_blank');
+            window.open(fbURL, '_blank');
         }
     };
 
@@ -37,10 +35,8 @@ const Contact = () => {
         }
     };
 
-
-
     return (
-        <section className="contact full-width" id='contact'>
+        <section className="contact full-width" id="contact">
             <div className="workshop-title-container">
                 <h1 className="workshop-title">CONTACT</h1>
                 <h1 className="workshop-title-shadow">CONTACT</h1>
@@ -76,7 +72,7 @@ const Contact = () => {
                     </div>
                 </div>
                 {/* Email and Call */}
-                <div className="row full-width-row" id='row'>
+                <div className="row full-width-row" id="row">
                     <div className="email-section">
                         <i className="fas fa-envelope"></i>
                         <h4>Email Me</h4>
@@ -92,7 +88,6 @@ const Contact = () => {
                         </button>
                     </div>
                 </div>
-
             </div>
         </section>
     );
