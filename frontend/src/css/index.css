@@ -1,0 +1,199 @@
+/* ------------------------------------------------------------- */
+/* nav.jsx */
+/* ----------------------------------------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../src/Image/hero.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-hover-effect {
+  background: linear-gradient(45deg, #f44336, #ff9800);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+}
+
+.btn-hover-effect:hover {
+  background: linear-gradient(45deg, #ff9800, #f44336);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-hover-effect:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+.btn-hover-effect span {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .btn-hover-effect {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .navbar {
+    height: auto !important;
+  }
+
+  .nav-item .nav-link {
+    color: #000 !important;
+  }
+}
+.navbar {
+  font-size: 18px;
+  height: 100px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #d3d3d3;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: grey;
+  transform: translateY(-3px);
+}
+.navbar-nav .nav-item .nav-link {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+}
+.btn-hover-effect:hover {
+  background-color: #d17f32;
+  color: #fff;
+}
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #ffcc00;
+  transform: scale(1.1);
+}
+
+.scroll-to-top-btn i {
+  font-size: 20px;
+}
+
+/* Hero Section Styling */
+
+.hero-section h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* Scroll Down Arrow */
+.scroll-down-arrow {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+.scroll-down-arrow:hover {
+  color: #ffcc00;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebea5;
+  transform: scale(1.1);
+}
+
+.whatsapp-btn i {
+  font-size: 20px;
+}
