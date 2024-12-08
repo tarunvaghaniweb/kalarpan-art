@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../../src/css/login.css";
-import icon from "../Image/icon.png";
+import "../../css/login.css";
+import icon from "../../Image/icon.png";
 
 const Login = () => {
     const [navbarColor, setNavbarColor] = useState("transparent");

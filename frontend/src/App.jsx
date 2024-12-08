@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Index from "../src/Pages/Index";
-import Login from "../src/Pages/Login";
+import Login from "../src/Pages/Login1";
 import Singup from "../src/Pages/Signup";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
