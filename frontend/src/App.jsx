@@ -7,7 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route path='/' element={<Index/>}/>
         <Route path='/Login1' element={<Login1/>}/>
