@@ -66,7 +66,7 @@ const Login = () => {
                             
                         </ul>
                         <div className="text-center d-flex">
-                            <a href="/Login">
+                            <a href="/Login1">
                                 <button className="btn btn-hover-effect me-2">Login</button>
                             </a>
                             <a href="/Signup">

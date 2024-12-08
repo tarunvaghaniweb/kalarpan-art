@@ -73,7 +73,7 @@ const Signup = () => {
                             
                         </ul>
                         <div className="text-center d-flex">
-                            <a href="/Login">
+                            <a href="/Login1">
                                 <button className="btn btn-hover-effect me-2">Login</button>
                             </a>
                             <a href="/Signup">
@@ -138,7 +138,7 @@ const Signup = () => {
                         <button id='button' type="submit">Sign Up</button>
                     </form>
                     <div className="footer">
-                        Already have an account? <a href="/Login">Log In</a>
+                        Already have an account? <a href="/Login1">Log In</a>
                     </div>
                 </div>
             </div>
