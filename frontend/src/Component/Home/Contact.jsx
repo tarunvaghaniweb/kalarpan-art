@@ -3,7 +3,7 @@ import '../../css/contact.css';
 
 const Contact = () => {
     const handlePhoneClick = () => {
-        window.location.href = 'tel:+919726137621';
+        window.location.href = 'tel:+919978043407';
     };
 
     const handleEmailClick = () => {
